@@ -15,3 +15,9 @@ Widget-Time <img width="960" height="293" alt="image" src="https://github.com/us
 primenum <img width="494" height="234" alt="image" src="https://github.com/user-attachments/assets/64a3afb6-4ca7-4a60-a9f9-4ee96c2d7165" /> <br>
 
 simpleflower <img width="805" height="1280" alt="image" src="https://github.com/user-attachments/assets/09820a92-5bab-4b49-9c34-b0ee95bad963" /> <br>
+
+wbwave <img width="353" height="189" alt="image" src="https://github.com/user-attachments/assets/7e76e165-52e0-48ba-b414-646dd6e7a6ac" /> <br>
+
+8march <img width="594" height="594" alt="image" src="https://github.com/user-attachments/assets/78a77156-eab7-4381-a39f-9abacb278593" /> <br>
+
+
