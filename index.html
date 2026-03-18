@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>perlit</title>
 <style>
     :root {
@@ -63,8 +62,33 @@
     .link { cursor: pointer; border-bottom: 1px solid var(--accent); transition: 0.3s; }
     .link:hover { text-shadow: 0 0 10px var(--accent); border-color: white; }
 
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .arrow-down {
+        margin-top: 40px;
+        width: 30px;
+        height: 30px;
+        border-right: 2px solid var(--accent);
+        border-bottom: 2px solid var(--accent);
+        transform: rotate(45deg);
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(45deg); }
+        40% { transform: translateY(-10px) rotate(45deg); }
+        60% { transform: translateY(-5px) rotate(45deg); }
+    }
+
     .container {
-        padding: 140px 20px 60px;
+        padding: 60px 20px;
         max-width: 1400px;
         margin: 0 auto;
     }
@@ -94,8 +118,13 @@
         animation: slam 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
+    .hero .card {
+        width: 320px;
+        height: 180px;
+    }
+
     @keyframes slam {
-        0% { transform: scale(2); opacity: 0; filter: blur(10px); }
+        0% { transform: scale(2); opacity: 0; filter: blur(0); }
         70% { transform: scale(0.95); }
         100% { transform: scale(1); opacity: 1; filter: blur(0); }
     }
@@ -141,6 +170,7 @@
     @media (max-width: 600px) {
         .grid { grid-template-columns: 1fr; }
         header { padding: 20px; font-size: 0.7rem; }
+        .hero .card { width: 90%; }
     }
 </style>
 </head>
@@ -152,6 +182,16 @@
     <div class="logo">perlch portfolio</div>
     <div class="link" onclick="window.open('https://github.com/perlch', '_blank')">Access Github</div>
 </header>
+
+<section class="hero">
+    <div class="card reveal" onclick="window.open('https://github.com', '_blank')">
+        <div class="card-img" style="background-image: url('https://avatars.githubusercontent.com/u/190875022?v=4'); opacity: 0.8;"></div>
+        <div class="card-content">
+            <span>this is perlch</span>
+        </div>
+    </div>
+    <div class="arrow-down"></div>
+</section>
 
 <div class="container">
     <div class="grid" id="projectGrid"></div>
@@ -167,12 +207,9 @@
         { name: "matrix", url: "https://perlch.github.io/matrix/", img: "https://github.com/user-attachments/assets/d81ab11f-4341-4c42-8f71-fccfb4eb6292" },
         { name: "RadarOne", url: "https://radarone.online", img: "https://github.com/user-attachments/assets/5afaf9af-2592-44c5-8132-a0fb8996e29f" },
         { name: "Widget-Time", url: "https://perlch.github.io/Widget-Time/", img: "https://github.com/user-attachments/assets/853fd572-61da-486a-b9ed-7727d18ac461" },
-        //{ name: "8march", url: "https://perlch.github.io/8march", img: "https://github.com/user-attachments/assets/78a77156-eab7-4381-a39f-9abacb278593" },
         { name: "wbwave", url: "https://perlch.github.io/wbwave", img: "https://github.com/user-attachments/assets/7e76e165-52e0-48ba-b414-646dd6e7a6ac" },
         { name: "primenum", url: "https://perlch.github.io/primenum/", img: "https://github.com/user-attachments/assets/64a3afb6-4ca7-4a60-a9f9-4ee96c2d7165" },
-        { name: "printerpy", url: "https://github.com/perlch/printerpy/", img: "" },
         { name: "simpleflower", url: "https://perlch.github.io/simpleflower", img: "https://github.com/user-attachments/assets/09820a92-5bab-4b49-9c34-b0ee95bad963" },
-        //{ name: "kiddomath", url: "https://perlch.github.io/kiddomath/", img: "https://github.com/perlch/kiddomath/blob/main/cat.png?raw=true" },
         { name: "perlit / cub8t (youtube)", url: "https://youtube.com/@cub8t", img: "https://yt3.googleusercontent.com/2RDOU0f-EhJkw7Jjb6GSEqZzrZxT3H-tO0hATFsEOvGpor8UuE84-mAetXNYK49gtOjtPgb3QQ=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" },
         { name: "northern void (youtube)", url: "https://youtube.com/@NORTHERNVOID1337", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzhwV_IAFrjzEDVpU1f_b5b5PwD6yIk7qIw&s" }
         
@@ -182,20 +219,25 @@
     for (let i = 0; i < 150; i++) {
         const star = document.createElement('div');
         star.className = 'star';
-        const x = Math.random() * 100;
-        const y = Math.random() * 100;
-        const duration = Math.random() * 3 + 2;
-        const delay = Math.random() * 5;
-        star.style.left = `${x}%`;
-        star.style.top = `${y}%`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
         star.style.width = star.style.height = `${Math.random() * 2 + 1}px`;
-        star.style.animationDuration = `${duration}s`;
-        star.style.animationDelay = `-${delay}s`;
+        star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        star.style.animationDelay = `-${Math.random() * 5}s`;
         space.appendChild(star);
     }
 
     const grid = document.getElementById("projectGrid");
-    projects.forEach((p, index) => {
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    projects.forEach((p) => {
         const card = document.createElement("div");
         card.className = "card";
         card.onclick = () => window.open(p.url, "_blank");
@@ -213,10 +255,8 @@
         card.appendChild(img);
         card.appendChild(content);
         grid.appendChild(card);
-
-        setTimeout(() => {
-            card.classList.add('reveal');
-        }, 300 + (index * 120));
+        
+        observer.observe(card);
     });
 </script>
 
