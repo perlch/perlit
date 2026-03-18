@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>perlit</title>
 <style>
     :root {
@@ -69,12 +70,13 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        padding: 0 20px;
     }
 
     .arrow-down {
         margin-top: 40px;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         border-right: 2px solid var(--accent);
         border-bottom: 2px solid var(--accent);
         transform: rotate(45deg);
@@ -119,14 +121,15 @@
     }
 
     .hero .card {
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         height: 180px;
     }
 
     @keyframes slam {
-        0% { transform: scale(2); opacity: 0; filter: blur(0); }
+        0% { transform: scale(2); opacity: 0; }
         70% { transform: scale(0.95); }
-        100% { transform: scale(1); opacity: 1; filter: blur(0); }
+        100% { transform: scale(1); opacity: 1; }
     }
 
     .card:hover {
@@ -167,10 +170,30 @@
         letter-spacing: 1px;
     }
 
-    @media (max-width: 600px) {
-        .grid { grid-template-columns: 1fr; }
-        header { padding: 20px; font-size: 0.7rem; }
-        .hero .card { width: 90%; }
+    @media (max-width: 768px) {
+        header { 
+            padding: 20px; 
+            font-size: 0.65rem; 
+            letter-spacing: 2px;
+        }
+        .grid { 
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+            gap: 15px;
+        }
+        .hero .card {
+            max-width: 280px;
+        }
+        .container {
+            padding: 40px 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .grid { 
+            grid-template-columns: 1fr; 
+        }
+        .logo { font-size: 0.6rem; }
+        .link { font-size: 0.6rem; }
     }
 </style>
 </head>
@@ -184,7 +207,7 @@
 </header>
 
 <section class="hero">
-    <div class="card reveal" onclick="window.open('https://github.com', '_blank')">
+    <div class="card reveal" onclick="window.open('https://github.com/perlch', '_blank')">
         <div class="card-img" style="background-image: url('https://avatars.githubusercontent.com/u/190875022?v=4'); opacity: 0.8;"></div>
         <div class="card-content">
             <span>this is perlch</span>
@@ -212,7 +235,6 @@
         { name: "simpleflower", url: "https://perlch.github.io/simpleflower", img: "https://github.com/user-attachments/assets/09820a92-5bab-4b49-9c34-b0ee95bad963" },
         { name: "perlit / cub8t (youtube)", url: "https://youtube.com/@cub8t", img: "https://yt3.googleusercontent.com/2RDOU0f-EhJkw7Jjb6GSEqZzrZxT3H-tO0hATFsEOvGpor8UuE84-mAetXNYK49gtOjtPgb3QQ=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" },
         { name: "northern void (youtube)", url: "https://youtube.com/@NORTHERNVOID1337", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzhwV_IAFrjzEDVpU1f_b5b5PwD6yIk7qIw&s" }
-        
     ];
 
     const space = document.getElementById('space');
