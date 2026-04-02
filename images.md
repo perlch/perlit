@@ -26,3 +26,10 @@ stating <img width="1054" height="1280" alt="image" src="https://github.com/user
 stating second picture <img width="483" height="172" alt="image" src="https://github.com/user-attachments/assets/07b2acbb-c20d-4628-a91c-3c99813ade04" /> <br>
 
 myfisrtmobileapp <img width="237" height="131" alt="image" src="https://github.com/user-attachments/assets/7c7f4039-b214-469e-945a-2ae73c24166d" /> <br>
+
+mediastuff goes here <br>
+
+perlit and the album <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/bd2cd9e4-93dd-4e25-8f29-b3bdb75cb337" />
+ <br>
+northern void <img width="2000" height="2000" alt="одуванчики" src="https://github.com/user-attachments/assets/4597640e-f410-4ba7-9248-9dc629c7df18" />
+ <br>
