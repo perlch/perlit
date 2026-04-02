@@ -31,5 +31,7 @@ mediastuff goes here <br>
 
 perlit and the album <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/bd2cd9e4-93dd-4e25-8f29-b3bdb75cb337" />
  <br>
+perlit <img width="1000" height="1000" alt="97fjcXAAAABklEQVQDACPxclzPN3TyAAAAAElFTkSuQmCC" src="https://github.com/user-attachments/assets/1dee9a74-a656-4a83-81b6-1ad75027eb8d" /> <br>
+
 northern void <img width="2000" height="2000" alt="одуванчики" src="https://github.com/user-attachments/assets/4597640e-f410-4ba7-9248-9dc629c7df18" />
  <br>
