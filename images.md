@@ -20,4 +20,7 @@ wbwave <img width="353" height="189" alt="image" src="https://github.com/user-at
 
 8march <img width="594" height="594" alt="image" src="https://github.com/user-attachments/assets/78a77156-eab7-4381-a39f-9abacb278593" /> <br>
 
+stating <img width="1054" height="1280" alt="image" src="https://github.com/user-attachments/assets/97c64526-91b5-4c6d-bd48-b9a6c0065781" /> <br>
+
+
 
