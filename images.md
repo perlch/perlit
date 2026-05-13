@@ -42,6 +42,8 @@ mp3towebm <img width="167" height="56" alt="image" src="https://github.com/user-
 perlit mixer <img width="1280" height="564" alt="image" src="https://github.com/user-attachments/assets/bbbafa8b-8f7a-453e-b712-cf1d503932c8" />
  <br>
 
-pocketpilot <img width="411" height="280" alt="image" src="https://github.com/user-attachments/assets/50f72676-866c-4cec-b7f9-d76dd745961a" />
+pocketpilot <img width="411" height="280" alt="image" src="https://github.com/user-attachments/assets/50f72676-866c-4cec-b7f9-d76dd745961a" /> <img width="750" height="166" alt="image" src="https://github.com/user-attachments/assets/c259c260-fb5f-4a85-b1d8-c1daab2def37" />
+
 
 <br>
+
