@@ -44,6 +44,7 @@ perlit mixer <img width="1280" height="564" alt="image" src="https://github.com/
 
 pocketpilot <img width="411" height="280" alt="image" src="https://github.com/user-attachments/assets/50f72676-866c-4cec-b7f9-d76dd745961a" /> <img width="750" height="166" alt="image" src="https://github.com/user-attachments/assets/c259c260-fb5f-4a85-b1d8-c1daab2def37" />
 
+<img width="960" height="170" alt="image" src="https://github.com/user-attachments/assets/1304b214-b74b-4715-ae74-52048bdc26b3" />
 
 <br>
 
